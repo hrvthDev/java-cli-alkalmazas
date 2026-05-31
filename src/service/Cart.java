@@ -25,6 +25,7 @@ public class Cart {
         items.add(new CartItem(product, quantity));
     }
 
+
     public void showCart() {
 
         if(items.isEmpty()) {
@@ -41,6 +42,7 @@ public class Cart {
         System.out.println("-----------------");
         System.out.println("Végösszeg: " + calculateTotal() + " Ft");
     }
+
 
     public double calculateTotal() {
 
@@ -67,6 +69,7 @@ public class Cart {
                 item.getProduct().getId() == productId
         );
     }
+
 
     public boolean isEmpty() {
         return items.isEmpty();
