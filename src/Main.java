@@ -146,6 +146,7 @@ public class Main {
             System.out.println("Nincs elegendő készlet.");
             return;
         }
+
         if(quantity <= 0) {
             System.out.println("A mennyiségnek pozitívnak kell lennie.");
             return;
@@ -188,6 +189,7 @@ public class Main {
         System.out.println("Köszönjük a vásárlást!");
 
         cart.clearCart();
+        System.out.println("Kosár kiürítve.");
     }
 
 
