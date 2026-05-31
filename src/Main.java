@@ -24,7 +24,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-
         mainMenu();
 
         InputHelper.closeScanner();
@@ -37,7 +36,6 @@ public class Main {
         boolean running = true;
 
         while (running) {
-
             System.out.println("\n===== FŐMENÜ =====");
             System.out.println("1. Admin mód");
             System.out.println("2. Vásárlói mód");
@@ -148,6 +146,10 @@ public class Main {
             System.out.println("Nincs elegendő készlet.");
             return;
         }
+        if(quantity <= 0) {
+            System.out.println("A mennyiségnek pozitívnak kell lennie.");
+            return;
+        }
 
         cart.addToCart(selectedProduct, quantity);
 
@@ -183,6 +185,7 @@ public class Main {
 
         System.out.println("Sikeres fizetés.");
         System.out.println("Fizetendő: " + total + " Ft");
+        System.out.println("Köszönjük a vásárlást!");
 
         cart.clearCart();
     }
@@ -191,6 +194,10 @@ public class Main {
 
     private static void showStatistics() {
 
+        if(orders.isEmpty()) {
+            System.out.println("Még nincs rendelés.");
+            return;
+        }
         double revenue = 0;
 
         for (Order order : orders) {
