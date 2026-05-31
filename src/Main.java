@@ -183,6 +183,7 @@ public class Main {
 
         System.out.println("Sikeres fizetés.");
         System.out.println("Fizetendő: " + total + " Ft");
+        System.out.println("Köszönjük a vásárlást!");
 
         cart.clearCart();
     }
