@@ -35,7 +35,7 @@ public class Cart {
             return;
         }
 
-        System.out.println("KOSÁR tartalma");
+        System.out.println("\n===== KOSÁR =====");
 
         for(CartItem item : items) {
             System.out.println(item);
@@ -43,6 +43,7 @@ public class Cart {
 
         System.out.println("-----------------");
         System.out.println("Végösszeg: " + calculateTotal() + " Ft");
+        System.out.println("Tételek száma: " + items.size());
     }
 
 
@@ -64,14 +65,6 @@ public class Cart {
     public List<CartItem> getItems() {
         return items;
     }
-
-    public void removeFromCart(int productId) {
-
-        items.removeIf(item ->
-                item.getProduct().getId() == productId
-        );
-    }
-
 
     public boolean isEmpty() {
         return items.isEmpty();
