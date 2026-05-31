@@ -17,6 +17,7 @@ public class InventoryManager {
 
     public void listProducts() {
         for (Product p : products) {
+            System.out.println("===== TERMÉKEK =====");
             System.out.println(p);
         }
         if(products.isEmpty()) {
