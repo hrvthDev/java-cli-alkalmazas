@@ -24,7 +24,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-
         mainMenu();
 
         InputHelper.closeScanner();
@@ -37,7 +36,6 @@ public class Main {
         boolean running = true;
 
         while (running) {
-
             System.out.println("\n===== FŐMENÜ =====");
             System.out.println("1. Admin mód");
             System.out.println("2. Vásárlói mód");
@@ -146,6 +144,10 @@ public class Main {
 
         if (quantity > selectedProduct.getStock()) {
             System.out.println("Nincs elegendő készlet.");
+            return;
+        }
+        if(quantity <= 0) {
+            System.out.println("A mennyiségnek pozitívnak kell lennie.");
             return;
         }
 
