@@ -35,18 +35,21 @@ public class InvoiceGenerator {
                 );
             }
 
+
             writer.write("\n----------------------\n");
             writer.write("Végösszeg: " +
                     order.getTotalPrice() +
                     " Ft\n");
 
+
             writer.write("======================\n");
 
             System.out.println("Számla sikeresen generálva: " + fileName);
 
+
         } catch(IOException e) {
 
-            System.out.println("Hiba történt a számla generálása során.");
+            System.out.println("Hiba történt a számla generálása során");
             e.printStackTrace();
         }
     }
