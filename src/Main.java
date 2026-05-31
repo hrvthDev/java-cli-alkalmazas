@@ -117,6 +117,10 @@ public class Main {
     private static void addProduct() {
 
         int id = InputHelper.readInt("ID: ");
+        if(inventory.findById(id) != null) {
+            System.out.println("Ez az ID már létezik.");
+            return;
+        }
         String name = InputHelper.readString("Név: ");
         double price = InputHelper.readDouble("Ár: ");
         int stock = InputHelper.readInt("Készlet: ");
