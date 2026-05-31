@@ -24,12 +24,12 @@ public class InvoiceGenerator {
 
                 writer.write(
                         item.getProduct().getName()
-                                + " | Ár: "
+                                + " | Ár:"
                                 + item.getProduct().getPrice()
                                 + " Ft"
-                                + " | Mennyiség: "
+                                + " | Mennyiség:"
                                 + item.getQuantity()
-                                + " | Összesen: "
+                                + " | Összesen:"
                                 + item.getTotalPrice()
                                 + " Ft\n"
                 );
