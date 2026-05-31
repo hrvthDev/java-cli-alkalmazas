@@ -10,6 +10,7 @@ public class Cart {
 
     private List<CartItem> items = new ArrayList<>();
 
+
     public void addToCart(Product product, int quantity) {
 
         for(CartItem item : items) {
@@ -26,14 +27,15 @@ public class Cart {
     }
 
 
+
     public void showCart() {
 
         if(items.isEmpty()) {
-            System.out.println("A kosár üres.");
+            System.out.println("A kosarad üres!");
             return;
         }
 
-        System.out.println("===== KOSÁR =====");
+        System.out.println("KOSÁR tartalma");
 
         for(CartItem item : items) {
             System.out.println(item);
