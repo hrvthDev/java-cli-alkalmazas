@@ -13,11 +13,15 @@ public class InventoryManager {
         products.add(product);
     }
 
+
+
     public void listProducts() {
         for (Product p : products) {
             System.out.println(p);
         }
     }
+
+
 
     public Product findById(int id) {
         for (Product p : products) {
