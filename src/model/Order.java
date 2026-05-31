@@ -39,21 +39,7 @@ public class Order {
     }
 
 
-    public void setOrderId(int orderId) {
-        this.orderId = orderId;
-    }
 
-    public void setItems(List<CartItem> items) {
-        this.items = items;
-    }
-
-    public void setTotalPrice(double totalPrice) {
-        this.totalPrice = totalPrice;
-    }
-
-    public void setOrderDate(LocalDateTime orderDate) {
-        this.orderDate = orderDate;
-    }
 
     @Override
     public String toString() {
