@@ -117,6 +117,10 @@ public class Main {
     private static void addProduct() {
 
         int id = InputHelper.readInt("ID: ");
+        if(inventory.findById(id) != null) {
+            System.out.println("Ez az ID már létezik.");
+            return;
+        }
         String name = InputHelper.readString("Név: ");
         double price = InputHelper.readDouble("Ár: ");
         int stock = InputHelper.readInt("Készlet: ");
@@ -146,6 +150,7 @@ public class Main {
             System.out.println("Nincs elegendő készlet.");
             return;
         }
+
         if(quantity <= 0) {
             System.out.println("A mennyiségnek pozitívnak kell lennie.");
             return;
@@ -188,6 +193,7 @@ public class Main {
         System.out.println("Köszönjük a vásárlást!");
 
         cart.clearCart();
+        System.out.println("Kosár kiürítve.");
     }
 
 
