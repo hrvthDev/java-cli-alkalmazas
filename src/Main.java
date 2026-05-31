@@ -192,6 +192,10 @@ public class Main {
 
     private static void showStatistics() {
 
+        if(orders.isEmpty()) {
+            System.out.println("Még nincs rendelés.");
+            return;
+        }
         double revenue = 0;
 
         for (Order order : orders) {
