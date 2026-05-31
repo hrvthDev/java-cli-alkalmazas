@@ -19,6 +19,9 @@ public class InventoryManager {
         for (Product p : products) {
             System.out.println(p);
         }
+        if(products.isEmpty()) {
+            System.out.println("Nincs elérhető termék.");
+        }
     }
 
 
