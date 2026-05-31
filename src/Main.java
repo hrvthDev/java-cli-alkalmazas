@@ -30,9 +30,7 @@ public class Main {
         InputHelper.closeScanner();
     }
 
-    // =========================
-    // FŐMENÜ
-    // =========================
+
 
     private static void mainMenu() {
 
@@ -60,9 +58,7 @@ public class Main {
         }
     }
 
-    // =========================
-    // ADMIN MENÜ
-    // =========================
+
 
     private static void adminMenu() {
 
@@ -89,9 +85,7 @@ public class Main {
         }
     }
 
-    // =========================
-    // VÁSÁRLÓI MENÜ
-    // =========================
+
 
     private static void customerMenu() {
 
@@ -120,9 +114,7 @@ public class Main {
         }
     }
 
-    // =========================
-    // TERMÉK HOZZÁADÁS
-    // =========================
+
 
     private static void addProduct() {
 
@@ -137,9 +129,6 @@ public class Main {
         System.out.println("Termék hozzáadva.");
     }
 
-    // =========================
-    // KOSÁRBA HELYEZÉS
-    // =========================
 
     private static void addToCart() {
 
@@ -165,9 +154,7 @@ public class Main {
         System.out.println("Termék kosárba helyezve.");
     }
 
-    // =========================
-    // FIZETÉS
-    // =========================
+
 
     private static void checkout() {
 
@@ -200,9 +187,7 @@ public class Main {
         cart.clearCart();
     }
 
-    // =========================
-    // STATISZTIKA
-    // =========================
+
 
     private static void showStatistics() {
 
