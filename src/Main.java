@@ -78,7 +78,7 @@ public class Main {
                 case 2 -> inventory.listProducts();
                 case 3 -> showStatistics();
                 case 0 -> back = true;
-                default -> System.out.println("Hibás választás.");
+                default -> System.out.println("Hiba: Nincs ilyen menüpont! Kérjük, válassz a listából.");
             }
         }
     }
