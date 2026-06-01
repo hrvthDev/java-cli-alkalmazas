@@ -127,6 +127,7 @@ public class Main {
         String category = InputHelper.readString("Kategória: ");
 
         inventory.addProduct(new Product(id, name, price, stock, category));
+        System.out.println("Sikeres mentés: Az új termék hozzáadva a raktárhoz.");
 
         System.out.println("Termék hozzáadva.");
     }
