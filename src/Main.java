@@ -49,7 +49,7 @@ public class Main {
                 case 2 -> customerMenu();
                 case 0 -> {
                     running = false;
-                    System.out.println("Kilépés...");
+                    System.out.println("A program sikeresen leállt. Viszlát!");
                 }
                 default -> System.out.println("Hibás választás.");
             }
