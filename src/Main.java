@@ -49,7 +49,7 @@ public class Main {
                 case 2 -> customerMenu();
                 case 0 -> {
                     running = false;
-                    System.out.println("Kilépés...");
+                    System.out.println("A program sikeresen leállt. Viszlát!");
                 }
                 default -> System.out.println("Hibás választás.");
             }
@@ -78,7 +78,7 @@ public class Main {
                 case 2 -> inventory.listProducts();
                 case 3 -> showStatistics();
                 case 0 -> back = true;
-                default -> System.out.println("Hibás választás.");
+                default -> System.out.println("Hiba: Nincs ilyen menüpont! Kérjük, válassz a listából.");
             }
         }
     }
@@ -127,6 +127,7 @@ public class Main {
         String category = InputHelper.readString("Kategória: ");
 
         inventory.addProduct(new Product(id, name, price, stock, category));
+        System.out.println("Sikeres mentés: Az új termék hozzáadva a raktárhoz.");
 
         System.out.println("Termék hozzáadva.");
     }
@@ -193,7 +194,7 @@ public class Main {
         System.out.println("Köszönjük a vásárlást!");
 
         cart.clearCart();
-        System.out.println("Kosár kiürítve.");
+        System.out.println("A kosarad tartalmát sikeresen töröltük.");
     }
 
 

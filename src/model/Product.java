@@ -42,6 +42,6 @@ public class Product {
                 " | Név: " + name +
                 " | Ár: " + price +
                 " Ft | Készlet: " + stock +
-                " | Kategória: " + category;
+                " | Kategória: [" + category + "]";
     }
 }
