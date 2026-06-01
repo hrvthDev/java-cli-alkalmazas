@@ -148,7 +148,7 @@ public class Main {
         }
 
         if (quantity > selectedProduct.getStock()) {
-            System.out.println("Nincs elegendő készlet.");
+            System.out.println("[HIBA] Nem áll rendelkezésre a kért mennyiség a raktárban!");
             return;
         }
 
