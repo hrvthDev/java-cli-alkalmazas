@@ -42,7 +42,7 @@ public class InvoiceGenerator {
                     " Ft\n");
 
 
-            writer.write("======================\n");
+            writer.write("**********************************************\n");
 
             System.out.println("Számla sikeresen generálva: " + fileName);
 

@@ -137,7 +137,7 @@ public class Main {
 
         inventory.listProducts();
 
-        int productId = InputHelper.readInt("Termék ID: ");
+        int productId = InputHelper.readInt("Kérjük, adja meg a megvásárolni kívánt termék ID-ját: ");
         int quantity = InputHelper.readInt("Mennyiség: ");
 
         Product selectedProduct = inventory.findById(productId);
@@ -148,7 +148,7 @@ public class Main {
         }
 
         if (quantity > selectedProduct.getStock()) {
-            System.out.println("Nincs elegendő készlet.");
+            System.out.println("[HIBA] Nem áll rendelkezésre a kért mennyiség a raktárban!");
             return;
         }
 
@@ -211,7 +211,7 @@ public class Main {
             revenue += order.getTotalPrice();
         }
 
-        System.out.println("\n===== STATISZTIKA =====");
+        System.out.println("\n>>> PÉNZÜGYI STATISZTIKÁK <<<");
         System.out.println("Rendelések száma: " + orders.size());
         System.out.println("Teljes bevétel: " + revenue + " Ft");
     }
