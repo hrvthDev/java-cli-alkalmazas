@@ -194,7 +194,7 @@ public class Main {
         System.out.println("Köszönjük a vásárlást!");
 
         cart.clearCart();
-        System.out.println("Kosár kiürítve.");
+        System.out.println("A kosarad tartalmát sikeresen töröltük.");
     }
 
 
