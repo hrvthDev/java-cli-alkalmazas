@@ -211,7 +211,7 @@ public class Main {
             revenue += order.getTotalPrice();
         }
 
-        System.out.println("\n===== STATISZTIKA =====");
+        System.out.println("\n>>> PÉNZÜGYI STATISZTIKÁK <<<");
         System.out.println("Rendelések száma: " + orders.size());
         System.out.println("Teljes bevétel: " + revenue + " Ft");
     }
