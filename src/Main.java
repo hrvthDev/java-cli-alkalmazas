@@ -137,7 +137,7 @@ public class Main {
 
         inventory.listProducts();
 
-        int productId = InputHelper.readInt("Termék ID: ");
+        int productId = InputHelper.readInt("Kérjük, adja meg a megvásárolni kívánt termék ID-ját: ");
         int quantity = InputHelper.readInt("Mennyiség: ");
 
         Product selectedProduct = inventory.findById(productId);
