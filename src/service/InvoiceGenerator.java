@@ -14,7 +14,7 @@ public class InvoiceGenerator {
 
         try(FileWriter writer = new FileWriter(fileName)) {
 
-            writer.write("===== SZÁMLA =====\n");
+            writer.write("******************* SZÁMLA *******************\n");
             writer.write("Rendelés ID: " + order.getOrderId() + "\n");
             writer.write("Dátum: " + order.getOrderDate() + "\n\n");
 
